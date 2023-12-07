@@ -34,24 +34,12 @@ class picture:
                         color = self.get_new_color()
                         border_size = random.randint(1, 10)
                         self.draw_polygon(num_sides, size, orientation, location, color, border_size)
-                        reduction_ratio = 0.618
+                        
                         
                         
                             
                         
-                        turtle.penup()
-                        turtle.forward(size*(1-reduction_ratio)/2)
-                        turtle.left(90)
-                        turtle.forward(size*(1-reduction_ratio)/2)
-                        turtle.right(90)
-                        location[0] = turtle.pos()[0]
-                        location[1] = turtle.pos()[1]
                         
-                        
-                      
-
-            
-                        self.draw_polygon(num_sides, size, orientation, location, color, border_size)
                 turtle.done()
                 
             elif self.choice == 2:
@@ -60,29 +48,21 @@ class picture:
                 turtle.tracer(0)
                 turtle.colormode(255)
                 # draw a polygon at a random location, orientation, color, and border line thickness
-                num_sides = random.randint(3, 5) # triangle, square, or pentagon
-                size = random.randint(50, 150)
-                orientation = random.randint(0, 90)
-                location = [random.randint(-300, 300), random.randint(-200, 200)]
-                color = self.get_new_color()
-                border_size = random.randint(1, 10)
-                self.draw_polygon(num_sides, size, orientation, location, color, border_size)
-                reduction_ratio = 0.618
-
-                # reposition the turtle and get a new location
-                turtle.penup()
-                turtle.forward(size*(1-reduction_ratio)/2)
-                turtle.left(90)
-                turtle.forward(size*(1-reduction_ratio)/2)
-                turtle.right(90)
-                location[0] = turtle.pos()[0]
-                location[1] = turtle.pos()[1]
-
-                # adjust the size according to the reduction ratio
-                size *= reduction_ratio
-
-    # draw the second polygon embedded inside the original 
-                self.draw_polygon(num_sides, size, orientation, location, color, border_size)
+                
+                num_sides = random.randint(4, 4)
+                for i in range(1,30): 
+                        size = random.randint(50, 150)
+                        orientation = random.randint(0, 90)
+                        location = [random.randint(-300, 300), random.randint(-200, 200)]
+                        color = self.get_new_color()
+                        border_size = random.randint(1, 10)
+                        self.draw_polygon(num_sides, size, orientation, location, color, border_size)
+                        
+                        
+                        
+                            
+                        
+                        
                 turtle.done()
                 
             elif self.choice == 3:
@@ -91,29 +71,21 @@ class picture:
                 turtle.tracer(0)
                 turtle.colormode(255)
                 # draw a polygon at a random location, orientation, color, and border line thickness
-                num_sides = random.randint(3, 5) # triangle, square, or pentagon
-                size = random.randint(50, 150)
-                orientation = random.randint(0, 90)
-                location = [random.randint(-300, 300), random.randint(-200, 200)]
-                color = self.get_new_color()
-                border_size = random.randint(1, 10)
-                self.draw_polygon(num_sides, size, orientation, location, color, border_size)
-                reduction_ratio = 0.618
-
-                # reposition the turtle and get a new location
-                turtle.penup()
-                turtle.forward(size*(1-reduction_ratio)/2)
-                turtle.left(90)
-                turtle.forward(size*(1-reduction_ratio)/2)
-                turtle.right(90)
-                location[0] = turtle.pos()[0]
-                location[1] = turtle.pos()[1]
-
-                # adjust the size according to the reduction ratio
-                size *= reduction_ratio
-
-    # draw the second polygon embedded inside the original 
-                self.draw_polygon(num_sides, size, orientation, location, color, border_size)
+                
+                num_sides = random.randint(5, 5)
+                for i in range(1,30): 
+                        size = random.randint(50, 150)
+                        orientation = random.randint(0, 90)
+                        location = [random.randint(-300, 300), random.randint(-200, 200)]
+                        color = self.get_new_color()
+                        border_size = random.randint(1, 10)
+                        self.draw_polygon(num_sides, size, orientation, location, color, border_size)
+                        
+                        
+                        
+                            
+                        
+                        
                 turtle.done()
                 
             elif self.choice == 4:
@@ -122,29 +94,21 @@ class picture:
                 turtle.tracer(0)
                 turtle.colormode(255)
                 # draw a polygon at a random location, orientation, color, and border line thickness
-                num_sides = random.randint(3, 5) # triangle, square, or pentagon
-                size = random.randint(50, 150)
-                orientation = random.randint(0, 90)
-                location = [random.randint(-300, 300), random.randint(-200, 200)]
-                color = self.get_new_color()
-                border_size = random.randint(1, 10)
-                self.draw_polygon(num_sides, size, orientation, location, color, border_size)
-                reduction_ratio = 0.618
-
-                # reposition the turtle and get a new location
-                turtle.penup()
-                turtle.forward(size*(1-reduction_ratio)/2)
-                turtle.left(90)
-                turtle.forward(size*(1-reduction_ratio)/2)
-                turtle.right(90)
-                location[0] = turtle.pos()[0]
-                location[1] = turtle.pos()[1]
-
-                # adjust the size according to the reduction ratio
-                size *= reduction_ratio
-
-    # draw the second polygon embedded inside the original 
-                self.draw_polygon(num_sides, size, orientation, location, color, border_size)
+                
+                num_sides = random.randint(3, 5)
+                for i in range(1,30): 
+                        size = random.randint(50, 150)
+                        orientation = random.randint(0, 90)
+                        location = [random.randint(-300, 300), random.randint(-200, 200)]
+                        color = self.get_new_color()
+                        border_size = random.randint(1, 10)
+                        self.draw_polygon(num_sides, size, orientation, location, color, border_size)
+                        
+                        
+                        
+                            
+                        
+                        
                 turtle.done()
                 
             elif self.choice == 5:
